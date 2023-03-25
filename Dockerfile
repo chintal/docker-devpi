@@ -1,6 +1,7 @@
 FROM python:3.11-alpine
 
 
+RUN apk add --no-cache --virtual .build-deps gcc musl-dev libffi-dev
 RUN pip install devpi-server devpi-web
 WORKDIR /root
 VOLUME /devpi
