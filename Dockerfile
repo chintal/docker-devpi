@@ -18,4 +18,5 @@ CMD exec devpi-server \
     --offline-mode \
     --secretfile ${DEVPI_PATH}/secrets/secret \
     --serverdir ${DEVPI_PATH}/server \
-    --outside-url ${DEVPI_OUTSIDE_URL}
+    --outside-url ${DEVPI_OUTSIDE_URL} \
+    --restrict-modify=root
