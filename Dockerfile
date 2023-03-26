@@ -15,7 +15,6 @@ ENV DEVPI_OUTSIDE_URL="http://localhost:3141"
 ENTRYPOINT ["sh", "/docker-entrypoint.sh"]
 CMD exec devpi-server \
     --host 0.0.0.0 \
-    --offline-mode \
     --secretfile ${DEVPI_PATH}/secrets/secret \
     --serverdir ${DEVPI_PATH}/server \
     --outside-url ${DEVPI_OUTSIDE_URL} \
