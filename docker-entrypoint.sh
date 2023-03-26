@@ -2,7 +2,7 @@
 
 if ! [ -d $DEVPI_PATH/server ]; then
 	echo "First Run. Initializing devpi."
-	devpi-init \
+	devpi-init --no-root-pypi \
 		--role standalone \
 		--root-passwd $DEVPI_ROOT_PASSWORD \
 		--serverdir $DEVPI_PATH/server
